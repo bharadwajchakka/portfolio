@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Bharadwaj's Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="./logo.jpg">
+    <script src="https://kit.fontawesome.com/324d3bd86f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="scroll-btn">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><h2>Port<span>folio</span></h2></div>
+            <ul>
+                <li><a onclick="hide()" href="#home">Home</a></li>
+                <li><a onclick="hide()" href="#about">About</a></li>
+                <li><a onclick="hide()" href="#project">Projects</a></li>
+                <li><a onclick="hide()" href="#contact">Contact</a></li>
+                <div id="cancelBtn"><i class="fas fa-xmark"></i></div>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bharadwaj-chakka" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/bharadwaj_chakka/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/bharadwajchakka/" target="blank"><i class="fab fa-github" target="_blank"></i></a>
+            </div>
+        </div>
+        <div id="bars"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="main">
+            <p>Hello,</p>
+            <h1>I'm <span>Bharadwaj.</span></h1>
+            <p>A Computer Science student</p>
+            <h3>at IIT Goa</h3>
+            <a id="aboutBtn" href="#about">About Me</a>
+        </div>
+        <div class="bgimage"><img src="./fp.jpg" alt="profile-img"></div>
+    </div>
+
+    <div id="about">
+        <div class="about-info">
+            <p class="smalltopic">who i am</p>
+            <h2> <span class="topic">- ABOUT ME -</span></h2>
+            <div id="about-container">
+                <div class="image"><img src="./prof.jpg" alt="profile-img"></div>
+                <div class="description"><p>I'm a third-year student at IIT, Goa, studying Computer Science and Engineering. I'm from Devarapalli, Andhra Pradesh. I'm learning about app development and machine learning as a part while solving problems at leetcode. When I feel discomfort, 
+                    I love playing cricket to get some relief and it refreshes my mind. Exploring new things in technology and entertainment excites me. I enjoy discovering 
+                    how applications are built and understanding how machines can learn. Cricket is my favorite sport, and I always look forward to relaxing with a good movie.</p></div>
+            </div>
+        </div>
+        
+        <div class="more-info">
+            <div class="education">
+                <h3>EDUCATION</h3>
+                <ul>
+                    <li>
+                        <p class="date">October, 2022 - May, 2026</p>
+                        <p class="course">BTech, Computer Science <br>and Engineering</p>
+                        <p class="institution">Indian Instiute of Technology, Goa</p>
+                    </li>
+                    <li>
+                        <p class="date">June, 2020 - August, 2022</p>
+                        <p class="course">Higher Secondary Course</p>
+                        <p class="institution">Sri Shirdi Sai Junior college, Rajahmundry</p>
+                    </li>
+                    <li>
+                        <p class="date">June, 2017 - April, 2020</p>
+                        <p class="course">High School</p>
+                        <p class="institution">Sri Shirdi Sai Vidya Niketan, Rajahmundry</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>SKILLS</h3>
+                <div>
+                    <div class="list-part">
+                        <h3>Programming Languages</h3>
+                        <p>Python Basics and some Libraries, C, C++</p>
+                    </div>
+                    
+                    <div class="list-part">
+                        <h3>Database & App Development</h3>
+                        <p>SQL, Firebase, Dart, Flutter</p>
+                    </div>
+                    
+                    <div class="list-part">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, Javascript Basics</p>
+                    </div>
+                    
+                    <div class="list-part">
+                        <h3>Others</h3>
+                        <p>Markdown, Bash Scripting, Latex, Git</p>
+                
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="project-info">
+            <p class="smalltopic">some works</p>
+            <h2><span class="topic">- MY PROJECTS -</span></h2>
+        </div>
+        <div class="works">
+            <div class="showcase">
+                <div class="card">
+                    <div><img src="./pro1.jpg"></div>
+                    <p class="project-name">Scoring App</p>
+                    <p class="project-description">This android flutter application is used by any person who organise some sports and games tournament (like annual sports fest), it provides scoring facility for the host and fixtures, results for the viewers.</p>
+                    <p class="buttonsWrapper">
+                        <a href="https://drive.google.com/file/d/1_FvK3OMWhzQ63RopUdnoWd0AjC0K5iNY/view?usp=drive_link" target="_blank" class="demo-btn">Demo</a>
+                        <a href="https://github.com/bharadwajchakka/Chakravyuh_Scoring_Application" target="_blank" class="github-btn">Github</a>
+                    </p>
+                </div>
+                <div flex-direction: column>
+                    <div class="card2">
+                        <div><img src="./pro2.png" class="imageBorder"></div>
+                        <p class="project-name">Player card Production</p>
+                        <p class="project-description">This python code is used to generate player cards in bulk or pasting different images on any card/template to produce respective no. of cards.</p>
+                        <p class="buttonsWrapper">
+                            <a href="https://drive.google.com/file/d/1OkfzfRvCDWSOmzyNKVUEnIbGBDx5_Ks5/view?usp=drive_link" target="_blank" class="demo-btn">Demo</a>
+                            <a href="https://github.com/bharadwajchakka/auction_card_production" target="_blank" class="github-btn">Github</a>
+                        </p>
+                    </div>
+
+                    <div class="card2">
+                        <div><img src="./pro3.png"></div>
+                        <p class="project-name">Sensor Flow</p>
+                        <p class="project-description">It's a sleek, user-friendly travel website with a responsive design, featuring multiple pages for seamless navigation and exploration.</p>
+                        <p class="buttonsWrapper">
+                            <a href="https://github.com/bharadwajchakka/portfolio" target="_blank" class="github-btn">Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p id="linktogit">Do visit my <a href="https://github.com/bharadwajchakka/" target="_blank">GITHUB</a></p>
+        </div>
+    </div>
+
+    <div id="contact">
+            <p class="smalltopic">get in touch</p>
+            <h2 class="contactmetopic"><span class="topic">- CONTACT ME -</span></h2>
+        
+        <div class="contact-details">
+            <div class="infos">
+                <h3>Get in Touch</h3>
+                <p>Thank you for visiting my personal website!
+                Feel free to reach out to me using the contact form.</p>
+                <div class="address contact-info">
+                    <div><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                    <p class="small-info">Place</p>
+                    <p>Devarapalli, Andhra Pradesh</p>
+                    </div>
+                </div>
+                <div class="email contact-info">
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                   <div><p class="small-info">Email</p>
+                    <p>bharadwajchakka10182004@gmail.com</p></div>
+                </div>
+                <div class="phone contact-info">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div><p class="small-info">Phone Number</p>
+                    <p>9392084218</p></div>
+                </div>
+                
+            </div>
+            <div class="feedback">
+                <h3>Send A Message</h3>
+                <form action="https://formspree.io/f/xovaaybg" method="post">
+                    <div>
+                        <input type="text" name="Name" id="name" placeholder="Full Name" required>
+                    </div> 
+                    <div>
+                        <input type="email" name="Email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <textarea id="msg" name="Message" placeholder="Send me a message..." required></textarea>
+                    </div>  
+                    <div class="buttons">
+                        <button id="resetBtn" type="reset" class="formbtn">Reset</button> 
+                    <button id="sendBtn" type="submit" class="formbtn">Send</button>
+                    </div>      
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div><a href="https://www.instagram.com/bharadwaj_chakka/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/bharadwaj-chakka" target="_blank">LinkedIn</a>
+        </div>
+        <p>Created by <span>Bharadwaj</span> | &copy Copyrights reserved.</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
