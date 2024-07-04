@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/324d3bd86f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div style="background-color: blueviolet;">
+        
+    </div>
     <div class="scroll-btn">
         <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
@@ -19,82 +22,122 @@
             <ul>
                 <li><a onclick="hide()" href="#home">Home</a></li>
                 <li><a onclick="hide()" href="#about">About</a></li>
+                <li><a onclick="hide()" href="#edu">Education</a></li>
+                <li><a onclick="hide()" href="#skill">Skills</a></li>
                 <li><a onclick="hide()" href="#project">Projects</a></li>
                 <li><a onclick="hide()" href="#contact">Contact</a></li>
                 <div id="cancelBtn"><i class="fas fa-xmark"></i></div>
             </ul>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/bharadwaj-chakka-376278254/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/bharadwaj_chakka/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/bharadwajchakka/" target="blank"><i class="fab fa-github" target="_blank"></i></a>
-            </div>
+        </div>
+        <div class="social-links">
+            <ul style="list-style-type: none; padding-left: 0; ">
+                <li><a href="https://www.linkedin.com/in/bharadwaj-chakka-376278254/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <ul style="list-style-type: none; padding-left: 0; ">
+                <li><a href="https://www.instagram.com/bharadwaj_chakka/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <ul style="list-style-type: none; padding-left: 0; ">
+                <li><a href="https://github.com/bharadwajchakka/" target="blank"><i class="fab fa-github" target="_blank"></i></a></li>
+            </ul>
         </div>
         <div id="bars"><i class="fas fa-bars"></i></div>
     </nav>
 
     <div class="container" id="home">
-        <div class="main">
-            <p>Hello,</p>
-            <h1>I'm <span>Bharadwaj.</span></h1>
-            <p>A Computer Science student</p>
-            <h3>at IIT Goa</h3>
-            <a id="aboutBtn" href="#about">About Me</a>
-        </div>
         <div class="bgimage"><img src="./fp.jpg" alt="profile-img"></div>
+        <div class="main">
+            <p>Welcome,</p>
+            <p>to my Journey</p>
+            <h1>I'm <span>Bharadwaj.</span></h1>
+            <p>Third-year UG-CSE student</p>
+            <h3>at IIT Goa</h3>
+            <a id="aboutBtn" href="#about">more-info</a>
+        </div>
     </div>
+
+    <hr style="color: black;">
+    <hr style="color: black;">
 
     <div id="about">
         <div class="about-info">
             <p class="smalltopic">who i am</p>
             <h2> <span class="topic">- ABOUT ME -</span></h2>
             <div id="about-container">
-                <div class="image"><img src="./prof.jpg" alt="profile-img"></div>
                 <div class="description"><p>I'm a third-year student at IIT, Goa, studying Computer Science and Engineering. I'm from Devarapalli, Andhra Pradesh. I'm learning about app development and machine learning as a part while solving problems at leetcode. When I feel discomfort, 
                     I love playing cricket to get some relief and it refreshes my mind. Exploring new things in technology and entertainment excites me. I enjoy discovering 
                     how applications are built and understanding how machines can learn. Cricket is my favorite sport, and I always look forward to relaxing with a good movie.</p></div>
+                    <div class="image"><img src="./prof.jpg" alt="profile-img"></div>
             </div>
         </div>
-        
+    </div>
+    <hr style="color: black;">
+    <hr style="color: black;">
+    <div id="edu">
+        <div class="project-info">
+            <p class="smalltopic">what i studied</p>
+            <h2 style="text-align: center;"><span class="topic">- EDUCATION -</span></h2></div>
         <div class="more-info">
             <div class="education">
-                <h3>EDUCATION</h3>
-                <ul>
-                    <li>
+                <ul class="showcase">
+                    <li class="box">
+                        <a href="https://iitgoa.ac.in/"><img src="./cropped-iit_goa.png"></a>
                         <p class="date">October, 2022 - May, 2026</p>
                         <p class="course">BTech, Computer Science <br>and Engineering</p>
-                        <p class="institution">Indian Instiute of Technology, Goa</p>
+                        <p class="result"><b>CGPA:</b> 7.23</p>
                     </li>
-                    <li>
-                        <p class="date">June, 2020 - August, 2022</p>
-                        <p class="course">Higher Secondary Course</p>
-                        <p class="institution">Sri Shirdi Sai Junior college, Rajahmundry</p>
+                </ul>
+                <ul class="showcase">
+                    <li class="box">
+                        <a href="https://www.lakshyaiitacademy.com"><img src="./Lakshya-Logo.png"></a>
+                        <p class="date" style="padding-top: 5%;">April, 2020 - August, 2022</p>
+                        <p class="course">Joint Entrance Examination Preparation <b>(JEE)</b></p>
+                        <p class="result" style="flex-direction: column;"><ul style="padding-top: 5%;"><b>MAIN:</b> CRL 2554 <b>ADVANCED:</b> CRL 4356</ul></p>
                     </li>
-                    <li>
+                </ul>
+                <ul class="showcase">
+                    <li class="box">
+                        <a href="https://sssjc.in/"><img src="./sssjc.png"></a>
+                        <p class="date">June, 2020 - May, 2022</p>
+                        <p class="course" style="padding-top: 6%;">Higher Secondary Course <b>(CBSE)</b></p>
+                        <p class="result"><b>GPA:</b> 92.20</p>
+                    </li>
+                </ul>
+                <ul class="showcase">
+                    <li class="box">
+                        <a href="https://srishirdisaischools.com/"><img src="./Shirdisai-Vidhya-nikethan-logo.png"></a>
                         <p class="date">June, 2017 - April, 2020</p>
-                        <p class="course">High School</p>
-                        <p class="institution">Sri Shirdi Sai Vidya Niketan, Rajahmundry</p>
+                        <p class="course" style="padding-top: 6%;">High School <b>(AP SSC)</b></p>
+                        <p class="result"><b>GPA:</b> 98.33</p>
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <hr style="color: black;">
+    <hr style="color: black;">
+    <div id="skill">
+        <div class="project-info">
+            <p class="smalltopic" style="color: white;">things i know</p>
+            <h2 style="text-align: center;"><span class="topic-s">- SKILLS -</span></h2></div>
+        <div class="more-info">
             <div class="skills">
-                <h3>SKILLS</h3>
-                <div>
-                    <div class="list-part">
+                <div class="showcase">
+                    <div class="box-part">
                         <h3>Programming Languages</h3>
                         <p>Python Basics and some Libraries, C, C++</p>
                     </div>
                     
-                    <div class="list-part">
+                    <div class="box-part">
                         <h3>Database & App Development</h3>
                         <p>SQL, Firebase, Dart, Flutter</p>
                     </div>
                     
-                    <div class="list-part">
+                    <div class="box-part">
                         <h3>Web Development</h3>
                         <p>HTML, CSS, Javascript Basics</p>
                     </div>
                     
-                    <div class="list-part">
+                    <div class="box-part">
                         <h3>Others</h3>
                         <p>Markdown, Bash Scripting, Latex, Git</p>
                 
@@ -104,10 +147,11 @@
             </div>
         </div>
     </div>
-
+    <hr style="color: black;">
+    <hr style="color: black;">
     <div id="project">
         <div class="project-info">
-            <p class="smalltopic">some works</p>
+            <p class="smalltopic">what i done</p>
             <h2><span class="topic">- MY PROJECTS -</span></h2>
         </div>
         <div class="works">
@@ -146,7 +190,8 @@
             <p id="linktogit">Do visit my <a href="https://github.com/bharadwajchakka/" target="_blank">GITHUB</a></p>
         </div>
     </div>
-
+    <hr style="color: black;">
+    <hr style="color: black;">
     <div id="contact">
             <p class="smalltopic">get in touch</p>
             <h2 class="contactmetopic"><span class="topic">- CONTACT ME -</span></h2>
@@ -196,10 +241,10 @@
         </div>
     </div>
     <footer>
-        <div><a href="https://www.linkedin.com/in/bharadwaj-chakka-376278254/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/bharadwaj-chakka" target="_blank">LinkedIn</a>
+        <div>
+            <a href="https://www.instagram.com/bharadwaj_chakka/" target="_blank">Instagram</a>
         </div>
-        <p>Created by <span>Bharadwaj</span> | &copy Copyrights reserved.</p>
+        <p>Created by <a href="https://bharadwajchakka.github.io/portfolio/" style="color: blue;"><span>Bharadwaj</span></a>| &copy Copyrights reserved.</p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scrollreveal.min.js"></script>

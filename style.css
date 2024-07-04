@@ -88,6 +88,7 @@ nav ul li a{
     color : rgb(15, 15, 15);
     position : relative;
     transition: 0.5s ease;
+    color: var(--color);
 }
 nav ul li a:hover{
     font-weight : 600;
@@ -106,17 +107,23 @@ nav ul li a:hover::after{
     width : 110%;
 }
 .social-links{
+    position : fixed;
+    top : 0;
+    height : 100%;
     display : flex;
-    margin-top : 10px;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top : 500px;
 }
-.social-links a{
+.social-links ul li a{
     width : 35px;
-    height : 35px;
+    display : flex;
+    flex-direction: column;
     text-align : center;
     text-decoration: none;
-    color : #f7f4f4;
-    box-shadow : 0 0 15px 5px rgba(246, 245, 245, 0.5);
-    margin : 0 12px;
+    color : var(--color);
+    box-shadow : 0 0 15px 5px rgba(90, 140, 178, 0.5);
+    margin : -5px 15px;
     border-radius: 50%;
     position : relative;
     overflow : hidden;
@@ -126,7 +133,7 @@ nav ul li a:hover::after{
     font-size : 16px;
     line-height : 35px;
     position : relative;
-    z-index : 10;
+    z-index : -10;
     transition : 0.5s color;
 }
 .social-links a::after{
@@ -143,6 +150,7 @@ nav ul li a:hover::after{
 }
 .social-links a:hover{
     transform : translateY(-10px);
+
 } 
 .social-links a:hover::after{
     top : 0;
@@ -189,9 +197,15 @@ nav .active ul li a::after{
 }
 .main{
     position : absolute;
-    top : 50%;
-    transform: translateY(-50%);
-    margin-left : 10%;
+    top : 30%;
+    transform: translateX(250%);
+    margin-left : 0%;
+    padding: 20px;
+    box-shadow: 0 0 03px 5px rgb(120, 124, 110);
+    border-radius: 5%;
+}
+.main p{
+    font-size: 20px;
 }
 .main p:first-of-type{
     font-size : var(--small-title);
@@ -201,11 +215,11 @@ nav .active ul li a::after{
     font-size: var(--small-title);
     font-weight : 500;
     margin-bottom : 5px;
-    color : var(--color1);
 }
 .main h1{
     font-size : 48px;
     margin-bottom : 10px;
+    color: #317fa6;
 }
 .main h3{
     font-size: var(--medium-title);
@@ -216,7 +230,7 @@ nav .active ul li a::after{
 #aboutBtn{
     font-size : var(--button-text);
     padding : 12px 16px;
-    color : black;
+    color : greenyellow;
     background-color: var(--color1);
     border : 0;
     outline : none;
@@ -233,13 +247,17 @@ nav .active ul li a::after{
 }
 .bgimage{
     position : absolute;
+    align-items: left;
     bottom : 0;
     right : 0;
+    left: 0%;
     z-index : -1;
 }
 .bgimage img{
     height : 100vh;
     opacity : 0.4;
+    box-shadow: 0 0 10px 15px rgb(71, 72, 69);
+    border-radius: 10%;
 }
 
 
@@ -247,10 +265,12 @@ nav .active ul li a::after{
 /* About Me Section */
 
 #about{
-    margin-top : 80px;
+    padding-top : 80px;
     min-height : 100vh;
     width : 100%;
     padding-top : 60px;
+    background-color: aqua;
+    padding-bottom: 50px;
 }
 .smalltopic{
     color : var(--color);
@@ -280,72 +300,203 @@ nav .active ul li a::after{
     bottom : -15px;
     left : 15%;
 }
+.topic-s{
+    position : relative;
+}
+.topic-s::before{
+    content : '';
+    background : white;
+    width : 100%;
+    height : 3px;
+    position : absolute;
+    bottom : -5px;
+}
+.topic-s::after{
+    content : '';
+    background : white;
+    width : 70%;
+    height : 3px;
+    position : absolute;
+    bottom : -15px;
+    left : 15%;
+}
 #about h2{
     margin-bottom : 35px;
     font-size: var(--medium-title);
     text-align: center;
 }
 #about-container{
-    max-width : 700px;
+    max-width : 900px;
     width : 90%;
     margin : auto;
     text-align: center;
     margin-top : 70px;
+    display: flex;
 }
 .image img{
     height : 300px;
     opacity : 0.9;
     display: inline-block;
     box-shadow : 0 0 0 5px rgba(255, 255, 255, 1), 0 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
 }
 .description{
     margin-top : 40px;
+    margin-right: 30px;
     line-height : 1.5;
     margin-bottom : 30px;
 }
 .more-info{
-    max-width : 700px;
+    max-width: 1200px;
     width : 90%;
     margin : auto;
-    display : flex;
-    align-items : flex-start;
-    justify-content : space-evenly;
-    gap : 25px;
+    margin-top: 100px;
 }
-.education h3{
-    margin-bottom : 20px;
+#edu{
+    min-height : 100vh;
+    width : 100%;
+    padding-top : 60px;
+    background-color: aqua;
+    padding-bottom: 50px;
 }
-.education ul li{
+.education{
+    margin-top: 60px;
+}
+.box{
+    width : 950px;
+    box-shadow : 0 0 20px 15px rgba(95, 90, 90, 0.5);
+    padding : 10px;
+    text-align : center;
+    display: flex;
+    border-radius : 15px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+.box img{
+    height : 120px;
+    width : 250px;
+    border-radius : 10px;
+}
+.box-description{
+    color : black;
+    margin-top : 5px;
+    margin-bottom : 15px;
+}
+.education ul{
     list-style: none;
     margin-bottom : 20px;
 }
+
 .date{
+    padding-top: 6%;
+    text-align: match-parent;
     font-weight: 600;
-    margin-bottom : 10px;
+    margin-right: 20px;
 }
 .course{
+    padding-top: 5%;
     color : var(--color);
     font-size : 16px;
+    margin-right: 20px;
 }
-.institution{
+.result{
+    padding-top: 6%;
     font-size : 14px;
+}
+#skill{
+    min-height : 100vh;
+    width : 100%;
+    padding-top : 60px;
+    background-color: aqua;
+    padding-bottom: 50px;
 }
 .skills{
     grid-area : skills;
+    animation: fadeInUp 1s forwards;
+  animation-delay: 1.5s;
 }
 .skills h3{
     margin-bottom : 20px;
 }
-.list-part{
+.box-part{
     margin-bottom: 15px;
+    width : 200px;
+    box-shadow : 0 0 20px 15px rgba(95, 90, 90, 0.5);
+    padding : 10px;
+    text-align : center;
+    display: flex;
+    flex-direction: column;
+    border-radius : 15px;
+    margin-bottom: 20px;
+    background-color: rgb(220, 129, 12);
 }
-.list-part h3{
+.box-part img{
+    height : 120px;
+    width : 250px;
+    border-radius : 10px;
+}
+.box-part h3{
     margin-bottom : 8px;
-    color : var(--color);
+    color : white;
 }
-.list-part p{
+.box-part p{
     display : inline-block;
     margin-right : 10px;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    opacity: 0;
+}
+  
+.skill {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+  
+.skill span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.skill ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+  
+.skill ul li {
+    margin-bottom: 5px;
+}
+  
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(205, 204, 0, 1);
+    animation: glow 0.5s linear infinite;
 }
 
 /* Project */
@@ -353,6 +504,8 @@ nav .active ul li a::after{
     width : 100%;
     min-height : 100vh;
     padding-top : 60px;
+    background-color: aqua;
+    padding-bottom: 60px;
 }
 #project h2{
     margin-bottom : 30px;
@@ -442,7 +595,7 @@ nav .active ul li a::after{
     text-align: center;
 }
 #linktogit a{
-    color : rgb(155, 53, 53);
+    color : rgb(169, 7, 244);
     transition: 0.3s ease;
 }
 #linktogit a:hover{
@@ -453,8 +606,9 @@ nav .active ul li a::after{
 /* Contact */
 #contact{
     width : 100%;
-    margin-bottom : 20px;
+    padding-bottom : 20px;
     padding-top : 60px;
+    background-color: aqua;
 }
 #contact h2{
     margin-bottom : 30px;
@@ -546,8 +700,7 @@ nav .active ul li a::after{
 
 /* Footer */
 footer{
-    margin-top : 50px;
-    padding-top : 15px;
+    padding-top : 25px;
     padding-bottom : 15px;
     background-color : #333;
     color : #fff;
@@ -614,4 +767,3 @@ footer p span{
         right : 15px;
     }
 }
-
